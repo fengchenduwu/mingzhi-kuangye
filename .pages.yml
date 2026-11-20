@@ -1,0 +1,40 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: news
+    label: 新闻公示
+    type: file
+    path: data/news.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 发布日期
+        type: date
+        required: true
+      - name: body
+        label: 正文
+        type: text
+        required: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
