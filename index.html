@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平定县铭智矿业有限公司</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; color: #222; background: #f5f6f8; line-height: 1.7; }
+  a { color: inherit; text-decoration: none; }
+  header { background: #16324f; color: #fff; position: sticky; top: 0; z-index: 10; }
+  .header-inner { max-width: 1080px; margin: 0 auto; padding: 14px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+  .logo { font-size: 20px; font-weight: 700; letter-spacing: 1px; }
+  nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 15px; }
+  nav a { opacity: .92; padding: 4px 2px; }
+  nav a:hover { opacity: 1; text-decoration: underline; }
+  .hero { background: linear-gradient(135deg, #16324f 0%, #24507c 60%, #2f639b 100%); color: #fff; }
+  .hero-inner { max-width: 1080px; margin: 0 auto; padding: 56px 20px 48px; }
+  .hero h1 { font-size: 34px; letter-spacing: 2px; margin-bottom: 10px; }
+  .hero p { font-size: 16px; opacity: .9; }
+  .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .stat { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); border-radius: 8px; padding: 12px 18px; min-width: 150px; }
+  .stat .num { font-size: 20px; font-weight: 700; }
+  .stat .lbl { font-size: 13px; opacity: .85; }
+  main { max-width: 1080px; margin: 0 auto; padding: 8px 20px 40px; }
+  section { background: #fff; border-radius: 10px; padding: 28px 30px; margin-top: 22px; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+  section h2 { font-size: 22px; color: #16324f; border-left: 4px solid #2f639b; padding-left: 12px; margin-bottom: 16px; }
+  section p { margin-bottom: 10px; font-size: 15.5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { border: 1px solid #e2e6ea; padding: 10px 14px; text-align: left; vertical-align: top; }
+  th { background: #f0f3f6; width: 180px; color: #16324f; font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  .news-item { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 13px 6px; border-bottom: 1px solid #eceff2; cursor: pointer; }
+  .news-item:hover .news-title { color: #2f639b; }
+  .news-title { font-size: 16px; }
+  .news-date { color: #8a94a0; font-size: 14px; white-space: nowrap; }
+  .latest-card { border: 1px solid #dbe4ec; background: #f7fafc; border-radius: 8px; padding: 18px 20px; cursor: pointer; }
+  .latest-card .news-title { font-size: 17px; font-weight: 600; }
+  .latest-card .meta { color: #8a94a0; font-size: 14px; margin-top: 4px; }
+  .btn { display: inline-block; margin-top: 10px; background: #2f639b; color: #fff; padding: 7px 18px; border-radius: 6px; font-size: 14px; }
+  #article-view { display: none; }
+  #article-view h2 { border: none; padding: 0; text-align: center; font-size: 24px; }
+  .article-meta { text-align: center; color: #8a94a0; font-size: 14px; margin: 8px 0 22px; }
+  .article-body p { margin-bottom: 14px; font-size: 16px; text-indent: 2em; }
+  .back-link { display: inline-block; margin-bottom: 14px; color: #2f639b; font-size: 15px; cursor: pointer; }
+  .empty-note { color: #8a94a0; font-size: 15px; padding: 8px 6px; }
+  footer { background: #16324f; color: #cfd9e3; margin-top: 30px; }
+  .footer-inner { max-width: 1080px; margin: 0 auto; padding: 24px 20px; font-size: 14px; text-align: center; }
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 26px; }
+    section { padding: 22px 18px; }
+    th { width: 120px; }
+    nav { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo">平定县铭智矿业有限公司</div>
+    <nav>
+      <a href="#home">首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#mine">矿山概况</a>
+      <a href="#news">新闻公示</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-inner">
+    <h1>平定县铭智矿业有限公司</h1>
+    <p>建筑石料用灰岩开采 · 平定县娘子关整合区 · 露天开采</p>
+    <div class="stats">
+      <div class="stat"><div class="num">0.2487 km²</div><div class="lbl">开采面积</div></div>
+      <div class="stat"><div class="num">4073.4 万吨</div><div class="lbl">保有资源量</div></div>
+      <div class="stat"><div class="num">2652 万元</div><div class="lbl">采矿权成交价</div></div>
+      <div class="stat"><div class="num">2026 – 2028</div><div class="lbl">采矿许可证有效期</div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="latest">
+    <h2>最新公示</h2>
+    <div id="latest-box"><p class="empty-note">正在加载…</p></div>
+  </section>
+
+  <section id="about">
+    <h2>关于我们</h2>
+    <p>平定县铭智矿业有限公司位于山西省阳泉市平定县娘子关镇下董寨村磨峪沟，是一家从事建筑石料用灰岩开采的矿业企业。公司依法取得平定县娘子关整合区采矿权，矿区采用露天方式开采建筑石料用灰岩。</p>
+    <p>2025 年 2 月，公司通过阳泉市公共资源交易中心挂牌出让，竞得平定县娘子关整合区采矿权，成交价 2652 万元，已于 2025 年 2 月 10 日一次性缴纳。</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>企业名称</th><td>平定县铭智矿业有限公司</td></tr>
+        <tr><th>统一社会信用代码</th><td>91140321MADP9RDE3J</td></tr>
+        <tr><th>企业类型</th><td>有限责任公司</td></tr>
+        <tr><th>注册地址</th><td>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="mine">
+    <h2>矿山概况</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>矿山名称</th><td>平定县娘子关整合区</td></tr>
+        <tr><th>开采矿种</th><td>建筑石料用灰岩</td></tr>
+        <tr><th>开采方式</th><td>露天开采</td></tr>
+        <tr><th>开采面积</th><td>约 0.2487 平方公里</td></tr>
+        <tr><th>保有资源量</th><td>约 4073.4 万吨</td></tr>
+        <tr><th>开采标高</th><td>712 米至 560 米</td></tr>
+        <tr><th>采矿许可证有效期</th><td>2026 年 04 月 14 日至 2028 年 04 月 14 日</td></tr>
+        <tr><th>采矿权取得方式</th><td>2025 年 2 月通过阳泉市公共资源交易中心挂牌出让竞得，成交价 2652 万元（2025 年 2 月 10 日一次性缴纳）</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>新闻公示</h2>
+    <div id="news-list"><p class="empty-note">正在加载…</p></div>
+  </section>
+
+  <section id="article-view">
+    <span class="back-link" id="back-btn">← 返回新闻公示</span>
+    <h2 id="article-title"></h2>
+    <div class="article-meta" id="article-meta"></div>
+    <div class="article-body" id="article-body"></div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我们</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>公司名称</th><td>平定县铭智矿业有限公司</td></tr>
+        <tr><th>地址</th><td>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</td></tr>
+        <tr><th>统一社会信用代码</th><td>91140321MADP9RDE3J</td></tr>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    © 2026 平定县铭智矿业有限公司 · 统一社会信用代码：91140321MADP9RDE3J
+  </div>
+</footer>
+
+<script>
+var NEWS = [];
+
+function fmtDate(s) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || '');
+  if (!m) return s || '';
+  return m[1] + '年' + parseInt(m[2], 10) + '月' + parseInt(m[3], 10) + '日';
+}
+
+function renderLatest() {
+  var box = document.getElementById('latest-box');
+  box.innerHTML = '';
+  if (!NEWS.length) {
+    box.innerHTML = '<p class="empty-note">暂无公示。</p>';
+    return;
+  }
+  var it = NEWS[0];
+  var card = document.createElement('div');
+  card.className = 'latest-card';
+  var t = document.createElement('div');
+  t.className = 'news-title';
+  t.textContent = it.title;
+  var meta = document.createElement('div');
+  meta.className = 'meta';
+  meta.textContent = '发布日期：' + fmtDate(it.date);
+  var btn = document.createElement('span');
+  btn.className = 'btn';
+  btn.textContent = '查看全文';
+  card.appendChild(t);
+  card.appendChild(meta);
+  card.appendChild(btn);
+  card.onclick = function () { openArticle(0); };
+  box.appendChild(card);
+}
+
+function renderList() {
+  var list = document.getElementById('news-list');
+  list.innerHTML = '';
+  if (!NEWS.length) {
+    list.innerHTML = '<p class="empty-note">暂无公示。</p>';
+    return;
+  }
+  NEWS.forEach(function (it, i) {
+    var row = document.createElement('div');
+    row.className = 'news-item';
+    var t = document.createElement('span');
+    t.className = 'news-title';
+    t.textContent = it.title;
+    var d = document.createElement('span');
+    d.className = 'news-date';
+    d.textContent = fmtDate(it.date);
+    row.appendChild(t);
+    row.appendChild(d);
+    row.onclick = function () { openArticle(i); };
+    list.appendChild(row);
+  });
+}
+
+function openArticle(i) {
+  var it = NEWS[i];
+  if (!it) return;
+  document.getElementById('article-title').textContent = it.title;
+  document.getElementById('article-meta').textContent = '发布日期：' + fmtDate(it.date);
+  var body = document.getElementById('article-body');
+  body.innerHTML = '';
+  var paras = String(it.body || '').split(/\n\s*\n|\n/);
+  paras.forEach(function (p) {
+    p = p.replace(/^\s+|\s+$/g, '');
+    if (!p) return;
+    var el = document.createElement('p');
+    el.textContent = p;
+    body.appendChild(el);
+  });
+  document.getElementById('news').style.display = 'none';
+  document.getElementById('latest').style.display = 'none';
+  var av = document.getElementById('article-view');
+  av.style.display = 'block';
+  av.scrollIntoView();
+  if (location.hash !== '#article-' + i) {
+    history.replaceState(null, '', '#article-' + i);
+  }
+}
+
+function closeArticle() {
+  document.getElementById('article-view').style.display = 'none';
+  document.getElementById('news').style.display = '';
+  document.getElementById('latest').style.display = '';
+  history.replaceState(null, '', '#news');
+  document.getElementById('news').scrollIntoView();
+}
+
+document.getElementById('back-btn').onclick = closeArticle;
+
+fetch('data/news.json')
+  .then(function (r) { return r.json(); })
+  .then(function (data) {
+    NEWS = (data || []).slice().sort(function (a, b) {
+      return (b.date || '') < (a.date || '') ? -1 : ((b.date || '') > (a.date || '') ? 1 : 0);
+    });
+    renderLatest();
+    renderList();
+    var m = /^#article-(\d+)$/.exec(location.hash || '');
+    if (m) openArticle(parseInt(m[1], 10));
+  })
+  .catch(function () {
+    document.getElementById('latest-box').innerHTML = '<p class="empty-note">公示内容加载失败，请稍后刷新重试。</p>';
+    document.getElementById('news-list').innerHTML = '<p class="empty-note">公示内容加载失败，请稍后刷新重试。</p>';
+  });
+</script>
+</body>
+</html>
