@@ -3,183 +3,513 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>平定县铭智矿业有限公司</title>
+<title>平定县铭智矿业有限公司 - 建筑石料用灰岩开采</title>
+<meta name="description" content="平定县铭智矿业有限公司，位于山西省阳泉市平定县娘子关镇下董寨村磨峪沟，依法开采平定县娘子关整合区建筑石料用灰岩，露天开采，保有资源量约4073.4万吨。">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; color: #222; background: #f5f6f8; line-height: 1.7; }
-  a { color: inherit; text-decoration: none; }
-  header { background: #16324f; color: #fff; position: sticky; top: 0; z-index: 10; }
-  .header-inner { max-width: 1080px; margin: 0 auto; padding: 14px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
-  .logo { font-size: 20px; font-weight: 700; letter-spacing: 1px; }
-  nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 15px; }
-  nav a { opacity: .92; padding: 4px 2px; }
-  nav a:hover { opacity: 1; text-decoration: underline; }
-  .hero { background: linear-gradient(135deg, #16324f 0%, #24507c 60%, #2f639b 100%); color: #fff; }
-  .hero-inner { max-width: 1080px; margin: 0 auto; padding: 56px 20px 48px; }
-  .hero h1 { font-size: 34px; letter-spacing: 2px; margin-bottom: 10px; }
-  .hero p { font-size: 16px; opacity: .9; }
-  .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-  .stat { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); border-radius: 8px; padding: 12px 18px; min-width: 150px; }
-  .stat .num { font-size: 20px; font-weight: 700; }
-  .stat .lbl { font-size: 13px; opacity: .85; }
-  main { max-width: 1080px; margin: 0 auto; padding: 8px 20px 40px; }
-  section { background: #fff; border-radius: 10px; padding: 28px 30px; margin-top: 22px; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
-  section h2 { font-size: 22px; color: #16324f; border-left: 4px solid #2f639b; padding-left: 12px; margin-bottom: 16px; }
-  section p { margin-bottom: 10px; font-size: 15.5px; }
-  table { width: 100%; border-collapse: collapse; font-size: 15px; }
-  th, td { border: 1px solid #e2e6ea; padding: 10px 14px; text-align: left; vertical-align: top; }
-  th { background: #f0f3f6; width: 180px; color: #16324f; font-weight: 600; }
-  .table-wrap { overflow-x: auto; }
-  .news-item { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 13px 6px; border-bottom: 1px solid #eceff2; cursor: pointer; }
-  .news-item:hover .news-title { color: #2f639b; }
-  .news-title { font-size: 16px; }
-  .news-date { color: #8a94a0; font-size: 14px; white-space: nowrap; }
-  .latest-card { border: 1px solid #dbe4ec; background: #f7fafc; border-radius: 8px; padding: 18px 20px; cursor: pointer; }
-  .latest-card .news-title { font-size: 17px; font-weight: 600; }
-  .latest-card .meta { color: #8a94a0; font-size: 14px; margin-top: 4px; }
-  .btn { display: inline-block; margin-top: 10px; background: #2f639b; color: #fff; padding: 7px 18px; border-radius: 6px; font-size: 14px; }
-  #article-view { display: none; }
-  #article-view h2 { border: none; padding: 0; text-align: center; font-size: 24px; }
-  .article-meta { text-align: center; color: #8a94a0; font-size: 14px; margin: 8px 0 22px; }
-  .article-body p { margin-bottom: 14px; font-size: 16px; text-indent: 2em; }
-  .back-link { display: inline-block; margin-bottom: 14px; color: #2f639b; font-size: 15px; cursor: pointer; }
-  .empty-note { color: #8a94a0; font-size: 15px; padding: 8px 6px; }
-  footer { background: #16324f; color: #cfd9e3; margin-top: 30px; }
-  .footer-inner { max-width: 1080px; margin: 0 auto; padding: 24px 20px; font-size: 14px; text-align: center; }
+  :root{
+    --ink:#17384f; --ink-deep:#0e283d; --ink-soft:#24507c;
+    --accent:#c08a2d; --accent-dark:#a5761f;
+    --green:#1e5c40; --green-deep:#123528;
+    --stone:#f6f4ef; --line:#e4e0d5; --text:#2b2f33; --mut:#6d7680;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif; color:var(--text); background:#fff; line-height:1.75; }
+  a { color:inherit; text-decoration:none; }
+  img { display:block; max-width:100%; }
+  .wrap { max-width:1200px; margin:0 auto; padding:0 24px; }
+
+  /* 顶部信息条 */
+  .topbar { background:var(--ink-deep); color:#b9c9d6; font-size:13px; }
+  .topbar .wrap { display:flex; justify-content:space-between; gap:12px; padding-top:7px; padding-bottom:7px; flex-wrap:wrap; }
+  .topbar b { color:#e8d9b8; font-weight:600; }
+
+  /* 页眉导航 */
+  header { background:#fff; position:sticky; top:0; z-index:50; box-shadow:0 1px 0 rgba(14,40,61,.08); transition:box-shadow .2s; }
+  header.scrolled { box-shadow:0 4px 18px rgba(14,40,61,.13); }
+  .header-in { display:flex; align-items:center; gap:16px; padding-top:14px; padding-bottom:14px; flex-wrap:wrap; }
+  .brand { display:flex; align-items:center; gap:13px; }
+  .brand-mark { width:47px; height:47px; background:linear-gradient(145deg,var(--ink) 0%,var(--ink-soft) 100%); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:800; letter-spacing:1px; border-radius:6px; box-shadow:inset 0 0 0 2px rgba(192,138,45,.55); flex:none; }
+  .brand-name { font-size:21px; font-weight:800; color:var(--ink-deep); letter-spacing:1.5px; line-height:1.25; }
+  .brand-en { font-size:10.5px; color:var(--mut); letter-spacing:1.6px; text-transform:uppercase; }
+  nav.main { margin-left:auto; display:flex; flex-wrap:wrap; gap:2px 4px; }
+  nav.main a { font-size:15.5px; padding:7px 13px; border-radius:4px; color:#33424f; }
+  nav.main a:hover { color:var(--accent-dark); background:var(--stone); }
+
+  /* 首屏 */
+  .hero { position:relative; color:#fff; background:#0e283d url('assets/hero-quarry.jpg') center 38%/cover no-repeat; }
+  .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(9,28,43,.86) 0%, rgba(9,28,43,.62) 46%, rgba(9,28,43,.18) 78%, rgba(9,28,43,.05) 100%); }
+  .hero-in { position:relative; padding:86px 0 0; }
+  .hero-kicker { display:flex; align-items:center; gap:12px; font-size:14.5px; letter-spacing:3px; color:#ecd9ac; margin-bottom:18px; }
+  .hero-kicker::before { content:""; width:44px; height:2px; background:var(--accent); }
+  .hero h1 { font-size:46px; font-weight:800; letter-spacing:3px; line-height:1.3; text-shadow:0 2px 14px rgba(0,0,0,.35); }
+  .hero-sub { margin-top:16px; font-size:18.5px; color:rgba(255,255,255,.92); letter-spacing:1px; }
+  .hero-slogan { margin-top:8px; font-size:16px; color:rgba(255,255,255,.75); letter-spacing:2px; }
+  .hero-btns { margin-top:30px; display:flex; gap:14px; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:11px 28px; font-size:15.5px; border-radius:4px; letter-spacing:1px; cursor:pointer; }
+  .btn-solid { background:var(--accent); color:#fff; font-weight:600; }
+  .btn-solid:hover { background:var(--accent-dark); }
+  .btn-ghost { border:1px solid rgba(255,255,255,.75); color:#fff; }
+  .btn-ghost:hover { background:rgba(255,255,255,.12); }
+  .hero-stats { position:relative; margin-top:56px; border-top:1px solid rgba(255,255,255,.22); background:rgba(9,28,43,.45); backdrop-filter:blur(3px); }
+  .hero-stats .wrap { display:grid; grid-template-columns:repeat(4,1fr); }
+  .hstat { padding:20px 22px 22px; border-left:1px solid rgba(255,255,255,.16); }
+  .hstat:first-child { border-left:none; padding-left:0; }
+  .hstat .num { font-size:25px; font-weight:800; color:#fff; letter-spacing:.5px; }
+  .hstat .num small { font-size:15px; font-weight:600; color:#ecd9ac; margin-left:2px; }
+  .hstat .lbl { font-size:13.5px; color:rgba(255,255,255,.78); margin-top:2px; letter-spacing:1px; }
+
+  /* 最新公示条 */
+  .latest-strip { background:#fff; border-bottom:1px solid var(--line); }
+  .latest-in { display:flex; align-items:center; gap:18px; padding-top:18px; padding-bottom:18px; flex-wrap:wrap; }
+  .tag { flex:none; background:#a33327; color:#fff; font-size:13.5px; font-weight:700; letter-spacing:2px; padding:4px 12px; border-radius:3px; }
+  .latest-title { font-size:17px; font-weight:600; color:var(--ink-deep); cursor:pointer; }
+  .latest-title:hover { color:var(--accent-dark); }
+  .latest-date { color:var(--mut); font-size:14px; margin-left:auto; white-space:nowrap; }
+  .latest-link { color:var(--accent-dark); font-size:14.5px; cursor:pointer; white-space:nowrap; }
+
+  /* 通用区块 */
+  section.blk { padding:74px 0; }
+  section.blk.alt { background:var(--stone); }
+  .sec-head { margin-bottom:36px; }
+  .sec-eyebrow { font-size:12.5px; letter-spacing:4px; color:var(--accent-dark); text-transform:uppercase; font-weight:700; }
+  .sec-head h2 { font-size:31px; color:var(--ink-deep); letter-spacing:2px; margin-top:6px; display:flex; align-items:center; gap:16px; }
+  .sec-head h2::after { content:""; flex:1; height:1px; background:var(--line); }
+  .sec-head p { color:var(--mut); font-size:15px; margin-top:8px; max-width:760px; }
+
+  /* 关于我们 */
+  .about-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:start; }
+  .about-txt p { font-size:16px; margin-bottom:14px; color:#3a4148; }
+  .about-txt p b { color:var(--ink-deep); }
+  .feat-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:22px; }
+  .feat { border:1px solid var(--line); border-left:3px solid var(--accent); background:#fff; padding:13px 16px; border-radius:4px; }
+  .feat .ft { font-weight:700; color:var(--ink-deep); font-size:15.5px; }
+  .feat .fd { font-size:13.5px; color:var(--mut); margin-top:2px; line-height:1.6; }
+  .photo-card { border-radius:8px; overflow:hidden; box-shadow:0 10px 30px rgba(14,40,61,.16); }
+  .photo-card img { width:100%; height:320px; object-fit:cover; }
+  .photo-cap { background:var(--ink-deep); color:#c8d5df; font-size:13.5px; padding:10px 16px; letter-spacing:1px; }
+  .info-card { margin-top:40px; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .info-card .ic-head { background:var(--stone); padding:13px 22px; font-weight:700; color:var(--ink-deep); letter-spacing:1px; border-bottom:1px solid var(--line); }
+  table.kv { width:100%; border-collapse:collapse; font-size:15px; }
+  table.kv th, table.kv td { padding:12px 22px; text-align:left; vertical-align:top; border-bottom:1px solid #efece4; }
+  table.kv tr:last-child th, table.kv tr:last-child td { border-bottom:none; }
+  table.kv th { width:190px; color:var(--ink); font-weight:600; background:#fcfbF8; white-space:nowrap; }
+
+  /* 矿山概况 */
+  .mine-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:start; }
+  .mine-photo { border-radius:8px; overflow:hidden; box-shadow:0 10px 30px rgba(14,40,61,.14); }
+  .mine-photo img { width:100%; height:300px; object-fit:cover; }
+  .timeline { margin-top:26px; }
+  .timeline h3 { font-size:17px; color:var(--ink-deep); letter-spacing:1px; margin-bottom:14px; }
+  .tl-item { position:relative; padding:0 0 20px 26px; border-left:2px solid var(--line); margin-left:6px; }
+  .tl-item:last-child { padding-bottom:2px; }
+  .tl-item::before { content:""; position:absolute; left:-7px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 3px #fff; }
+  .tl-date { font-size:13.5px; color:var(--accent-dark); font-weight:700; letter-spacing:1px; }
+  .tl-txt { font-size:15px; color:#3a4148; }
+
+  /* 产品与服务 */
+  .prod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .prod-card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:box-shadow .2s, transform .2s; }
+  .prod-card:hover { box-shadow:0 12px 28px rgba(14,40,61,.13); transform:translateY(-3px); }
+  .prod-card .pc-img { height:180px; overflow:hidden; }
+  .prod-card .pc-img img { width:100%; height:100%; object-fit:cover; }
+  .prod-card .pc-body { padding:20px 22px 24px; }
+  .prod-card h3 { font-size:18px; color:var(--ink-deep); letter-spacing:1px; margin-bottom:8px; }
+  .prod-card p { font-size:14.5px; color:#4a5158; }
+  .spec-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:13px; }
+  .spec-tags span { background:var(--stone); border:1px solid var(--line); color:var(--ink); font-size:13px; padding:2px 10px; border-radius:20px; }
+  .prod-note { margin-top:18px; font-size:13.5px; color:var(--mut); }
+
+  /* 安全与绿色 */
+  section.green { background:linear-gradient(120deg, var(--green-deep) 0%, var(--green) 90%); color:#eaf3ee; }
+  section.green .sec-eyebrow { color:#a9d3ba; }
+  section.green .sec-head h2 { color:#fff; }
+  section.green .sec-head h2::after { background:rgba(255,255,255,.22); }
+  section.green .sec-head p { color:rgba(234,243,238,.8); }
+  .green-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
+  .green-photo { border-radius:8px; overflow:hidden; box-shadow:0 12px 32px rgba(0,0,0,.3); }
+  .green-photo img { width:100%; height:330px; object-fit:cover; }
+  .prin-list { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .prin { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.16); border-radius:8px; padding:18px 20px; }
+  .prin .pn { font-size:13px; color:#a9d3ba; letter-spacing:2px; font-weight:700; }
+  .prin h3 { font-size:17.5px; color:#fff; margin:4px 0 6px; letter-spacing:1px; }
+  .prin p { font-size:14px; color:rgba(234,243,238,.85); line-height:1.65; }
+
+  /* 新闻公示 */
+  .news-row { display:flex; gap:20px; align-items:center; padding:18px 10px; border-bottom:1px solid #eceadf; cursor:pointer; }
+  .news-row:hover { background:#fbfaf6; }
+  .news-row:hover .news-title { color:var(--accent-dark); }
+  .ndate { flex:none; width:70px; text-align:center; background:var(--stone); border:1px solid var(--line); border-radius:6px; padding:8px 0 6px; }
+  .ndate .d { font-size:23px; font-weight:800; color:var(--ink-deep); line-height:1.15; }
+  .ndate .ym { font-size:12px; color:var(--mut); letter-spacing:.5px; }
+  .nmain { flex:1; min-width:0; }
+  .news-title { font-size:16.5px; font-weight:600; color:#2c3540; }
+  .news-kind { display:inline-block; font-size:12px; color:#a33327; border:1px solid #e3c1bb; background:#faf1ef; border-radius:3px; padding:0 7px; margin-right:9px; vertical-align:2px; letter-spacing:1px; }
+  .narrow { color:var(--mut); font-size:18px; flex:none; }
+  .empty-note { color:var(--mut); font-size:15px; padding:10px 6px; }
+
+  /* 文章页 */
+  #article-view { display:none; padding:56px 0 70px; }
+  .back-link { display:inline-block; margin-bottom:18px; color:var(--ink-soft); font-size:15px; cursor:pointer; }
+  .back-link:hover { color:var(--accent-dark); }
+  #article-view h2 { text-align:center; font-size:26px; color:var(--ink-deep); letter-spacing:1px; line-height:1.5; }
+  .article-meta { text-align:center; color:var(--mut); font-size:14px; margin:12px 0 26px; padding-bottom:20px; border-bottom:1px solid var(--line); }
+  .article-body { max-width:860px; margin:0 auto; }
+  .article-body p { margin-bottom:15px; font-size:16.5px; text-indent:2em; color:#33383e; }
+
+  /* 联系我们 */
+  .contact-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .contact-card { border:1px solid var(--line); border-radius:8px; padding:24px 26px; background:#fff; }
+  .contact-card .cl { font-size:13px; letter-spacing:3px; color:var(--accent-dark); font-weight:700; }
+  .contact-card .cv { font-size:17px; color:var(--ink-deep); font-weight:600; margin-top:8px; line-height:1.6; }
+  .contact-card .cd { font-size:14px; color:var(--mut); margin-top:5px; }
+
+  /* 页脚 */
+  footer { background:var(--ink-deep); color:#b9c9d6; }
+  .footer-in { display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; padding:46px 0 36px; }
+  .footer-in h4 { color:#fff; font-size:16.5px; letter-spacing:1.5px; margin-bottom:13px; }
+  .footer-in p, .footer-in a { font-size:14px; line-height:1.9; color:#a9bccb; }
+  .footer-in a { display:block; }
+  .footer-in a:hover { color:#ecd9ac; }
+  .footer-brand { font-size:19px; font-weight:800; color:#fff; letter-spacing:1.5px; margin-bottom:10px; }
+  .footer-bar { border-top:1px solid rgba(255,255,255,.12); padding:16px 0; font-size:13px; color:#8fa5b5; text-align:center; }
+
+  @media (max-width: 960px) {
+    .about-grid, .mine-grid, .green-grid { grid-template-columns:1fr; }
+    .prod-grid, .contact-grid { grid-template-columns:1fr 1fr; }
+    .hero-stats .wrap { grid-template-columns:1fr 1fr; }
+    .hstat { padding-left:22px; border-left:1px solid rgba(255,255,255,.16); }
+    .footer-in { grid-template-columns:1fr 1fr; }
+  }
   @media (max-width: 640px) {
-    .hero h1 { font-size: 26px; }
-    section { padding: 22px 18px; }
-    th { width: 120px; }
-    nav { margin-left: 0; }
+    .hero h1 { font-size:31px; letter-spacing:2px; }
+    .hero-in { padding-top:56px; }
+    section.blk { padding:52px 0; }
+    .prod-grid, .contact-grid, .feat-row, .prin-list, .footer-in { grid-template-columns:1fr; }
+    table.kv th { width:118px; white-space:normal; }
+    .brand-name { font-size:18px; }
+    nav.main { margin-left:0; }
+    .photo-card img, .mine-photo img, .green-photo img { height:230px; }
   }
 </style>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo">平定县铭智矿业有限公司</div>
-    <nav>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>欢迎访问 <b>平定县铭智矿业有限公司</b> 官方网站</span>
+    <span>山西省阳泉市平定县 · 娘子关镇</span>
+  </div>
+</div>
+
+<header id="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#home">
+      <span class="brand-mark">铭</span>
+      <span>
+        <span class="brand-name">平定县铭智矿业有限公司</span><br>
+        <span class="brand-en">Pingding Mingzhi Mining Co., Ltd.</span>
+      </span>
+    </a>
+    <nav class="main">
       <a href="#home">首页</a>
       <a href="#about">关于我们</a>
       <a href="#mine">矿山概况</a>
+      <a href="#products">产品与服务</a>
       <a href="#news">新闻公示</a>
+      <a href="#safety">安全与绿色</a>
       <a href="#contact">联系我们</a>
     </nav>
   </div>
 </header>
 
 <div class="hero" id="home">
-  <div class="hero-inner">
+  <div class="wrap hero-in">
+    <div class="hero-kicker">建筑石料用灰岩 · 露天开采</div>
     <h1>平定县铭智矿业有限公司</h1>
-    <p>建筑石料用灰岩开采 · 平定县娘子关整合区 · 露天开采</p>
-    <div class="stats">
-      <div class="stat"><div class="num">0.2487 km²</div><div class="lbl">开采面积</div></div>
-      <div class="stat"><div class="num">4073.4 万吨</div><div class="lbl">保有资源量</div></div>
-      <div class="stat"><div class="num">2652 万元</div><div class="lbl">采矿权成交价</div></div>
-      <div class="stat"><div class="num">2026 – 2028</div><div class="lbl">采矿许可证有效期</div></div>
+    <p class="hero-sub">平定县娘子关整合区采矿权人 · 依法取得采矿许可证</p>
+    <p class="hero-slogan">依法开采 · 规范管理 · 绿色发展 · 服务地方建设</p>
+    <div class="hero-btns">
+      <a class="btn btn-solid" href="#mine">了解矿山概况</a>
+      <a class="btn btn-ghost" href="#news">查看新闻公示</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="wrap">
+      <div class="hstat"><div class="num">0.2487<small>km²</small></div><div class="lbl">矿区开采面积</div></div>
+      <div class="hstat"><div class="num">4073.4<small>万吨</small></div><div class="lbl">保有资源量</div></div>
+      <div class="hstat"><div class="num">712–560<small>m</small></div><div class="lbl">开采标高</div></div>
+      <div class="hstat"><div class="num">2026–2028</div><div class="lbl">采矿许可证有效期</div></div>
     </div>
   </div>
 </div>
 
-<main>
-  <section id="latest">
-    <h2>最新公示</h2>
-    <div id="latest-box"><p class="empty-note">正在加载…</p></div>
-  </section>
+<div class="latest-strip" id="latest">
+  <div class="wrap latest-in">
+    <span class="tag">最新公示</span>
+    <div id="latest-box"><span class="empty-note">正在加载…</span></div>
+  </div>
+</div>
 
-  <section id="about">
-    <h2>关于我们</h2>
-    <p>平定县铭智矿业有限公司位于山西省阳泉市平定县娘子关镇下董寨村磨峪沟，是一家从事建筑石料用灰岩开采的矿业企业。公司依法取得平定县娘子关整合区采矿权，矿区采用露天方式开采建筑石料用灰岩。</p>
-    <p>2025 年 2 月，公司通过阳泉市公共资源交易中心挂牌出让，竞得平定县娘子关整合区采矿权，成交价 2652 万元，已于 2025 年 2 月 10 日一次性缴纳。</p>
-    <div class="table-wrap">
-      <table>
-        <tr><th>企业名称</th><td>平定县铭智矿业有限公司</td></tr>
-        <tr><th>统一社会信用代码</th><td>91140321MADP9RDE3J</td></tr>
-        <tr><th>企业类型</th><td>有限责任公司</td></tr>
-        <tr><th>注册地址</th><td>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</td></tr>
-      </table>
+<main id="main-content">
+
+  <section class="blk" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">About Us</div>
+        <h2>关于我们</h2>
+        <p>立足娘子关，依法开发矿产资源，为地方基础设施建设提供建筑石料保障。</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-txt">
+          <p>平定县铭智矿业有限公司位于<b>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</b>，是一家从事建筑石料用灰岩开采的矿业企业。公司依法取得<b>平定县娘子关整合区</b>采矿权，矿区采用露天方式开采建筑石料用灰岩。</p>
+          <p>2025 年 2 月，公司通过<b>阳泉市公共资源交易中心</b>挂牌出让，公开竞得平定县娘子关整合区采矿权，成交价 <b>2652 万元</b>，已于 2025 年 2 月 10 日一次性缴纳。公司现持有采矿许可证，有效期自 2026 年 4 月 14 日至 2028 年 4 月 14 日。</p>
+          <p>公司坚持依法办矿、规范管理，在资源开发的同时注重安全生产与生态环境保护，努力为地方经济建设供应稳定、合格的建筑石料产品。</p>
+          <div class="feat-row">
+            <div class="feat"><div class="ft">依法取得采矿权</div><div class="fd">经公共资源交易中心挂牌出让程序公开竞得，手续完备。</div></div>
+            <div class="feat"><div class="ft">出让价款足额缴纳</div><div class="fd">采矿权成交价 2652 万元，已于 2025 年 2 月 10 日一次性缴纳。</div></div>
+            <div class="feat"><div class="ft">资源储量可靠</div><div class="fd">矿区保有建筑石料用灰岩资源量约 4073.4 万吨。</div></div>
+            <div class="feat"><div class="ft">服务地方建设</div><div class="fd">产品面向周边建筑与基础设施工程用料需求。</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="photo-card">
+            <img src="assets/mine-bench.jpg" alt="露天矿山台阶开采作业">
+            <div class="photo-cap">矿山开采作业面 · 台阶式露天开采</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="ic-head">企业工商信息</div>
+        <table class="kv">
+          <tr><th>企业名称</th><td>平定县铭智矿业有限公司</td></tr>
+          <tr><th>统一社会信用代码</th><td>91140321MADP9RDE3J</td></tr>
+          <tr><th>企业类型</th><td>有限责任公司</td></tr>
+          <tr><th>注册地址</th><td>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</td></tr>
+        </table>
+      </div>
     </div>
   </section>
 
-  <section id="mine">
-    <h2>矿山概况</h2>
-    <div class="table-wrap">
-      <table>
-        <tr><th>矿山名称</th><td>平定县娘子关整合区</td></tr>
-        <tr><th>开采矿种</th><td>建筑石料用灰岩</td></tr>
-        <tr><th>开采方式</th><td>露天开采</td></tr>
-        <tr><th>开采面积</th><td>约 0.2487 平方公里</td></tr>
-        <tr><th>保有资源量</th><td>约 4073.4 万吨</td></tr>
-        <tr><th>开采标高</th><td>712 米至 560 米</td></tr>
-        <tr><th>采矿许可证有效期</th><td>2026 年 04 月 14 日至 2028 年 04 月 14 日</td></tr>
-        <tr><th>采矿权取得方式</th><td>2025 年 2 月通过阳泉市公共资源交易中心挂牌出让竞得，成交价 2652 万元（2025 年 2 月 10 日一次性缴纳）</td></tr>
-      </table>
+  <section class="blk alt" id="mine">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">The Mine</div>
+        <h2>矿山概况</h2>
+        <p>平定县娘子关整合区，开采矿种为建筑石料用灰岩，露天开采。</p>
+      </div>
+      <div class="mine-grid">
+        <div class="info-card" style="margin-top:0;">
+          <div class="ic-head">矿山基本参数</div>
+          <table class="kv">
+            <tr><th>矿山名称</th><td>平定县娘子关整合区</td></tr>
+            <tr><th>采矿权人</th><td>平定县铭智矿业有限公司</td></tr>
+            <tr><th>开采矿种</th><td>建筑石料用灰岩</td></tr>
+            <tr><th>开采方式</th><td>露天开采</td></tr>
+            <tr><th>开采面积</th><td>约 0.2487 平方公里</td></tr>
+            <tr><th>保有资源量</th><td>约 4073.4 万吨</td></tr>
+            <tr><th>开采标高</th><td>712 米至 560 米</td></tr>
+            <tr><th>采矿许可证有效期</th><td>2026 年 4 月 14 日至 2028 年 4 月 14 日</td></tr>
+          </table>
+        </div>
+        <div>
+          <div class="mine-photo">
+            <img src="assets/hero-quarry.jpg" alt="露天灰岩矿山全景">
+          </div>
+          <div class="timeline">
+            <h3>采矿权取得历程</h3>
+            <div class="tl-item">
+              <div class="tl-date">2025 年 2 月</div>
+              <div class="tl-txt">通过阳泉市公共资源交易中心挂牌出让，竞得平定县娘子关整合区采矿权，成交价 2652 万元。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">2025 年 2 月 10 日</div>
+              <div class="tl-txt">采矿权出让成交价款 2652 万元一次性缴纳完毕。</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">2026 年 4 月 14 日</div>
+              <div class="tl-txt">采矿许可证生效，有效期至 2028 年 4 月 14 日。</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="news">
-    <h2>新闻公示</h2>
-    <div id="news-list"><p class="empty-note">正在加载…</p></div>
+  <section class="blk" id="products">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Products &amp; Services</div>
+        <h2>产品与服务</h2>
+        <p>以建筑石料用灰岩为原料，经破碎、筛分加工为多规格建筑骨料，供应建筑工程与基础设施建设用料。</p>
+      </div>
+      <div class="prod-grid">
+        <div class="prod-card">
+          <div class="pc-img"><img src="assets/aggregate-yard.jpg" alt="碎石骨料堆场与输送系统"></div>
+          <div class="pc-body">
+            <h3>碎石骨料</h3>
+            <p>灰岩原矿经破碎筛分分级，形成多种粒径规格的碎石骨料，适用于商品混凝土、沥青混凝土及建筑工程。</p>
+            <div class="spec-tags"><span>5–10 mm</span><span>10–20 mm</span><span>20–31.5 mm</span><span>多规格可选</span></div>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div class="pc-img"><img src="assets/mine-bench.jpg" alt="灰岩原矿开采装车"></div>
+          <div class="pc-body">
+            <h3>建筑石料</h3>
+            <p>露天台阶开采的建筑石料用灰岩原矿，岩性稳定、强度可靠，可用于路基填筑、挡墙砌筑等工程用途。</p>
+            <div class="spec-tags"><span>块石</span><span>片石</span><span>路基填料</span></div>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div class="pc-img"><img src="assets/hero-quarry.jpg" alt="矿区全景与运输道路"></div>
+          <div class="pc-body">
+            <h3>石粉与供应服务</h3>
+            <p>加工副产石粉可用于制砖、路基垫层等用途；公司面向平定及周边地区工程项目提供稳定的石料供应与运输衔接服务。</p>
+            <div class="spec-tags"><span>0–5 mm 石粉</span><span>周边工程供应</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="prod-note">注：产品规格以实际生产与供应情况为准，具体合作事宜请与公司联系。</p>
+    </div>
+  </section>
+
+  <section class="blk green" id="safety">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Safety &amp; Green Mining</div>
+        <h2>安全与绿色</h2>
+        <p>安全是矿山的生命线，绿色是矿山的底色。公司将安全生产与生态保护贯穿开采全过程。</p>
+      </div>
+      <div class="green-grid">
+        <div class="prin-list">
+          <div class="prin"><div class="pn">01</div><h3>安全生产</h3><p>坚持安全第一、预防为主，落实安全生产责任制，规范台阶开采与爆破、运输作业管理。</p></div>
+          <div class="prin"><div class="pn">02</div><h3>绿色开采</h3><p>坚持边开采、边治理，合理规划开采顺序，减少对矿区周边环境的影响。</p></div>
+          <div class="prin"><div class="pn">03</div><h3>生态修复</h3><p>对已开采区域及时开展边坡治理与植被恢复，推进矿区复绿复垦。</p></div>
+          <div class="prin"><div class="pn">04</div><h3>扬尘治理</h3><p>运输道路洒水降尘，料堆覆盖防尘，努力降低开采加工环节的粉尘排放。</p></div>
+        </div>
+        <div class="green-photo">
+          <img src="assets/green-mine.jpg" alt="矿山边坡复绿与洒水降尘">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">News &amp; Notices</div>
+        <h2>新闻公示</h2>
+        <p>公司重要事项与采矿权相关信息依法在此公示。</p>
+      </div>
+      <div id="news-list"><p class="empty-note">正在加载…</p></div>
+    </div>
   </section>
 
   <section id="article-view">
-    <span class="back-link" id="back-btn">← 返回新闻公示</span>
-    <h2 id="article-title"></h2>
-    <div class="article-meta" id="article-meta"></div>
-    <div class="article-body" id="article-body"></div>
-  </section>
-
-  <section id="contact">
-    <h2>联系我们</h2>
-    <div class="table-wrap">
-      <table>
-        <tr><th>公司名称</th><td>平定县铭智矿业有限公司</td></tr>
-        <tr><th>地址</th><td>山西省阳泉市平定县娘子关镇下董寨村磨峪沟</td></tr>
-        <tr><th>统一社会信用代码</th><td>91140321MADP9RDE3J</td></tr>
-      </table>
+    <div class="wrap">
+      <span class="back-link" id="back-btn">← 返回新闻公示</span>
+      <h2 id="article-title"></h2>
+      <div class="article-meta" id="article-meta"></div>
+      <div class="article-body" id="article-body"></div>
     </div>
   </section>
+
+  <section class="blk alt" id="contact" style="padding-top:64px;">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow">Contact Us</div>
+        <h2>联系我们</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="cl">公司地址</div>
+          <div class="cv">山西省阳泉市平定县娘子关镇下董寨村磨峪沟</div>
+          <div class="cd">平定县铭智矿业有限公司注册地址</div>
+        </div>
+        <div class="contact-card">
+          <div class="cl">矿山位置</div>
+          <div class="cv">平定县娘子关整合区</div>
+          <div class="cd">开采矿种：建筑石料用灰岩 · 露天开采</div>
+        </div>
+        <div class="contact-card">
+          <div class="cl">统一社会信用代码</div>
+          <div class="cv">91140321MADP9RDE3J</div>
+          <div class="cd">企业类型：有限责任公司</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-  <div class="footer-inner">
-    © 2026 平定县铭智矿业有限公司 · 统一社会信用代码：91140321MADP9RDE3J
+  <div class="wrap">
+    <div class="footer-in">
+      <div>
+        <div class="footer-brand">平定县铭智矿业有限公司</div>
+        <p>依法开采平定县娘子关整合区建筑石料用灰岩，坚持安全、绿色、规范发展，为地方建设提供建筑石料保障。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="#about">关于我们</a>
+        <a href="#mine">矿山概况</a>
+        <a href="#products">产品与服务</a>
+        <a href="#news">新闻公示</a>
+      </div>
+      <div>
+        <h4>联系信息</h4>
+        <p>地址：山西省阳泉市平定县娘子关镇下董寨村磨峪沟</p>
+        <p>矿山：平定县娘子关整合区</p>
+        <p>统一社会信用代码：91140321MADP9RDE3J</p>
+      </div>
+    </div>
+    <div class="footer-bar">© 2026 平定县铭智矿业有限公司 · 统一社会信用代码：91140321MADP9RDE3J</div>
   </div>
 </footer>
 
 <script>
 var NEWS = [];
+var CONTENT_SECTIONS = ['about', 'mine', 'products', 'safety', 'news', 'contact'];
+
+window.addEventListener('scroll', function () {
+  document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 8);
+});
+
+function parseDate(s) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || '');
+  if (!m) return null;
+  return { y: m[1], mo: m[2], d: m[3] };
+}
 
 function fmtDate(s) {
-  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || '');
-  if (!m) return s || '';
-  return m[1] + '年' + parseInt(m[2], 10) + '月' + parseInt(m[3], 10) + '日';
+  var p = parseDate(s);
+  if (!p) return s || '';
+  return p.y + '年' + parseInt(p.mo, 10) + '月' + parseInt(p.d, 10) + '日';
 }
 
 function renderLatest() {
   var box = document.getElementById('latest-box');
   box.innerHTML = '';
   if (!NEWS.length) {
-    box.innerHTML = '<p class="empty-note">暂无公示。</p>';
+    box.innerHTML = '<span class="empty-note">暂无公示。</span>';
     return;
   }
+  box.style.display = 'contents';
   var it = NEWS[0];
-  var card = document.createElement('div');
-  card.className = 'latest-card';
-  var t = document.createElement('div');
-  t.className = 'news-title';
+  var t = document.createElement('span');
+  t.className = 'latest-title';
   t.textContent = it.title;
-  var meta = document.createElement('div');
-  meta.className = 'meta';
-  meta.textContent = '发布日期：' + fmtDate(it.date);
-  var btn = document.createElement('span');
-  btn.className = 'btn';
-  btn.textContent = '查看全文';
-  card.appendChild(t);
-  card.appendChild(meta);
-  card.appendChild(btn);
-  card.onclick = function () { openArticle(0); };
-  box.appendChild(card);
+  t.onclick = function () { openArticle(0); };
+  var d = document.createElement('span');
+  d.className = 'latest-date';
+  d.textContent = fmtDate(it.date);
+  var link = document.createElement('span');
+  link.className = 'latest-link';
+  link.textContent = '查看全文 →';
+  link.onclick = function () { openArticle(0); };
+  box.appendChild(t);
+  box.appendChild(d);
+  box.appendChild(link);
 }
 
 function renderList() {
@@ -190,26 +520,53 @@ function renderList() {
     return;
   }
   NEWS.forEach(function (it, i) {
+    var p = parseDate(it.date);
     var row = document.createElement('div');
-    row.className = 'news-item';
+    row.className = 'news-row';
+    var nd = document.createElement('div');
+    nd.className = 'ndate';
+    var dd = document.createElement('div');
+    dd.className = 'd';
+    dd.textContent = p ? p.d : '--';
+    var ym = document.createElement('div');
+    ym.className = 'ym';
+    ym.textContent = p ? (p.y + '-' + p.mo) : '';
+    nd.appendChild(dd);
+    nd.appendChild(ym);
+    var main = document.createElement('div');
+    main.className = 'nmain';
+    var kind = document.createElement('span');
+    kind.className = 'news-kind';
+    kind.textContent = '公示';
     var t = document.createElement('span');
     t.className = 'news-title';
     t.textContent = it.title;
-    var d = document.createElement('span');
-    d.className = 'news-date';
-    d.textContent = fmtDate(it.date);
-    row.appendChild(t);
-    row.appendChild(d);
+    main.appendChild(kind);
+    main.appendChild(t);
+    var ar = document.createElement('span');
+    ar.className = 'narrow';
+    ar.textContent = '›';
+    row.appendChild(nd);
+    row.appendChild(main);
+    row.appendChild(ar);
     row.onclick = function () { openArticle(i); };
     list.appendChild(row);
   });
+}
+
+function setContentVisible(v) {
+  CONTENT_SECTIONS.forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.style.display = v ? '' : 'none';
+  });
+  document.getElementById('latest').style.display = v ? '' : 'none';
 }
 
 function openArticle(i) {
   var it = NEWS[i];
   if (!it) return;
   document.getElementById('article-title').textContent = it.title;
-  document.getElementById('article-meta').textContent = '发布日期：' + fmtDate(it.date);
+  document.getElementById('article-meta').textContent = '发布日期：' + fmtDate(it.date) + ' · 平定县铭智矿业有限公司';
   var body = document.getElementById('article-body');
   body.innerHTML = '';
   var paras = String(it.body || '').split(/\n\s*\n|\n/);
@@ -220,8 +577,7 @@ function openArticle(i) {
     el.textContent = p;
     body.appendChild(el);
   });
-  document.getElementById('news').style.display = 'none';
-  document.getElementById('latest').style.display = 'none';
+  setContentVisible(false);
   var av = document.getElementById('article-view');
   av.style.display = 'block';
   av.scrollIntoView();
@@ -232,8 +588,7 @@ function openArticle(i) {
 
 function closeArticle() {
   document.getElementById('article-view').style.display = 'none';
-  document.getElementById('news').style.display = '';
-  document.getElementById('latest').style.display = '';
+  setContentVisible(true);
   history.replaceState(null, '', '#news');
   document.getElementById('news').scrollIntoView();
 }
@@ -252,7 +607,7 @@ fetch('data/news.json')
     if (m) openArticle(parseInt(m[1], 10));
   })
   .catch(function () {
-    document.getElementById('latest-box').innerHTML = '<p class="empty-note">公示内容加载失败，请稍后刷新重试。</p>';
+    document.getElementById('latest-box').innerHTML = '<span class="empty-note">公示内容加载失败，请稍后刷新重试。</span>';
     document.getElementById('news-list').innerHTML = '<p class="empty-note">公示内容加载失败，请稍后刷新重试。</p>';
   });
 </script>
