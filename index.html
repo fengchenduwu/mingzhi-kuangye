@@ -37,7 +37,7 @@
   nav.main a:hover { color:var(--accent-dark); background:var(--stone); }
 
   /* 首屏 */
-  .hero { position:relative; color:#fff; background:#0e283d url('assets/hero-quarry.jpg') center 38%/cover no-repeat; }
+  .hero { position:relative; color:#fff; background:linear-gradient(120deg,#0a2033 0%,#0e283d 45%,#16486b 100%); }
   .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(9,28,43,.86) 0%, rgba(9,28,43,.62) 46%, rgba(9,28,43,.18) 78%, rgba(9,28,43,.05) 100%); }
   .hero-in { position:relative; padding:86px 0 0; }
   .hero-kicker { display:flex; align-items:center; gap:12px; font-size:14.5px; letter-spacing:3px; color:#ecd9ac; margin-bottom:18px; }
@@ -78,16 +78,13 @@
   .sec-head p { color:var(--mut); font-size:15px; margin-top:8px; max-width:760px; }
 
   /* 关于我们 */
-  .about-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:start; }
+  .about-grid { display:grid; grid-template-columns:1fr; gap:44px; align-items:start; }
   .about-txt p { font-size:16px; margin-bottom:14px; color:#3a4148; }
   .about-txt p b { color:var(--ink-deep); }
   .feat-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:22px; }
   .feat { border:1px solid var(--line); border-left:3px solid var(--accent); background:#fff; padding:13px 16px; border-radius:4px; }
   .feat .ft { font-weight:700; color:var(--ink-deep); font-size:15.5px; }
   .feat .fd { font-size:13.5px; color:var(--mut); margin-top:2px; line-height:1.6; }
-  .photo-card { border-radius:8px; overflow:hidden; box-shadow:0 10px 30px rgba(14,40,61,.16); }
-  .photo-card img { width:100%; height:320px; object-fit:cover; }
-  .photo-cap { background:var(--ink-deep); color:#c8d5df; font-size:13.5px; padding:10px 16px; letter-spacing:1px; }
   .info-card { margin-top:40px; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
   .info-card .ic-head { background:var(--stone); padding:13px 22px; font-weight:700; color:var(--ink-deep); letter-spacing:1px; border-bottom:1px solid var(--line); }
   table.kv { width:100%; border-collapse:collapse; font-size:15px; }
@@ -97,8 +94,6 @@
 
   /* 矿山概况 */
   .mine-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:start; }
-  .mine-photo { border-radius:8px; overflow:hidden; box-shadow:0 10px 30px rgba(14,40,61,.14); }
-  .mine-photo img { width:100%; height:300px; object-fit:cover; }
   .timeline { margin-top:26px; }
   .timeline h3 { font-size:17px; color:var(--ink-deep); letter-spacing:1px; margin-bottom:14px; }
   .tl-item { position:relative; padding:0 0 20px 26px; border-left:2px solid var(--line); margin-left:6px; }
@@ -109,10 +104,8 @@
 
   /* 产品与服务 */
   .prod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-  .prod-card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:box-shadow .2s, transform .2s; }
+  .prod-card { background:#fff; border:1px solid var(--line); border-top:3px solid var(--accent); border-radius:8px; overflow:hidden; transition:box-shadow .2s, transform .2s; }
   .prod-card:hover { box-shadow:0 12px 28px rgba(14,40,61,.13); transform:translateY(-3px); }
-  .prod-card .pc-img { height:180px; overflow:hidden; }
-  .prod-card .pc-img img { width:100%; height:100%; object-fit:cover; }
   .prod-card .pc-body { padding:20px 22px 24px; }
   .prod-card h3 { font-size:18px; color:var(--ink-deep); letter-spacing:1px; margin-bottom:8px; }
   .prod-card p { font-size:14.5px; color:#4a5158; }
@@ -126,9 +119,7 @@
   section.green .sec-head h2 { color:#fff; }
   section.green .sec-head h2::after { background:rgba(255,255,255,.22); }
   section.green .sec-head p { color:rgba(234,243,238,.8); }
-  .green-grid { display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
-  .green-photo { border-radius:8px; overflow:hidden; box-shadow:0 12px 32px rgba(0,0,0,.3); }
-  .green-photo img { width:100%; height:330px; object-fit:cover; }
+  .green-grid { display:grid; grid-template-columns:1fr; gap:44px; align-items:center; }
   .prin-list { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
   .prin { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.16); border-radius:8px; padding:18px 20px; }
   .prin .pn { font-size:13px; color:#a9d3ba; letter-spacing:2px; font-weight:700; }
@@ -189,7 +180,6 @@
     table.kv th { width:118px; white-space:normal; }
     .brand-name { font-size:18px; }
     nav.main { margin-left:0; }
-    .photo-card img, .mine-photo img, .green-photo img { height:230px; }
   }
 </style>
 </head>
@@ -272,12 +262,6 @@
             <div class="feat"><div class="ft">服务地方建设</div><div class="fd">产品面向周边建筑与基础设施工程用料需求。</div></div>
           </div>
         </div>
-        <div>
-          <div class="photo-card">
-            <img src="assets/mine-bench.jpg" alt="露天矿山台阶开采作业">
-            <div class="photo-cap">矿山开采作业面 · 台阶式露天开采</div>
-          </div>
-        </div>
       </div>
       <div class="info-card">
         <div class="ic-head">企业工商信息</div>
@@ -314,9 +298,6 @@
           </table>
         </div>
         <div>
-          <div class="mine-photo">
-            <img src="assets/hero-quarry.jpg" alt="露天灰岩矿山全景">
-          </div>
           <div class="timeline">
             <h3>采矿权取得历程</h3>
             <div class="tl-item">
@@ -346,7 +327,6 @@
       </div>
       <div class="prod-grid">
         <div class="prod-card">
-          <div class="pc-img"><img src="assets/aggregate-yard.jpg" alt="碎石骨料堆场与输送系统"></div>
           <div class="pc-body">
             <h3>碎石骨料</h3>
             <p>灰岩原矿经破碎筛分分级，形成多种粒径规格的碎石骨料，适用于商品混凝土、沥青混凝土及建筑工程。</p>
@@ -354,7 +334,6 @@
           </div>
         </div>
         <div class="prod-card">
-          <div class="pc-img"><img src="assets/mine-bench.jpg" alt="灰岩原矿开采装车"></div>
           <div class="pc-body">
             <h3>建筑石料</h3>
             <p>露天台阶开采的建筑石料用灰岩原矿，岩性稳定、强度可靠，可用于路基填筑、挡墙砌筑等工程用途。</p>
@@ -362,7 +341,6 @@
           </div>
         </div>
         <div class="prod-card">
-          <div class="pc-img"><img src="assets/hero-quarry.jpg" alt="矿区全景与运输道路"></div>
           <div class="pc-body">
             <h3>石粉与供应服务</h3>
             <p>加工副产石粉可用于制砖、路基垫层等用途；公司面向平定及周边地区工程项目提供稳定的石料供应与运输衔接服务。</p>
@@ -387,9 +365,6 @@
           <div class="prin"><div class="pn">02</div><h3>绿色开采</h3><p>坚持边开采、边治理，合理规划开采顺序，减少对矿区周边环境的影响。</p></div>
           <div class="prin"><div class="pn">03</div><h3>生态修复</h3><p>对已开采区域及时开展边坡治理与植被恢复，推进矿区复绿复垦。</p></div>
           <div class="prin"><div class="pn">04</div><h3>扬尘治理</h3><p>运输道路洒水降尘，料堆覆盖防尘，努力降低开采加工环节的粉尘排放。</p></div>
-        </div>
-        <div class="green-photo">
-          <img src="assets/green-mine.jpg" alt="矿山边坡复绿与洒水降尘">
         </div>
       </div>
     </div>
